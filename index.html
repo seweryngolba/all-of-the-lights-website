@@ -12,7 +12,89 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="logo">
+        <i class="fa-solid fa-lightbulb logo-bulb"></i>
+        <span class="logo-name"
+          >ALL OF <br />
+          THE LIGHTS</span
+        >
+      </div>
+      <div id="hamburger-menu" class="menu">
+        <i id="ham-logo" class="fa-solid fa-bars ham-menu"></i>
+        <i id="close" class="fa-regular fa-circle-xmark ham-menu-close"></i>
+      </div>
+      <div id="desktop-menu" class="desktop-menu">
+        <a class="menu-item" href="#about">ABOUT</a>
+        <a class="menu-item" href="#products">PRODUCTS</a>
+        <a class="menu-item" href="#contact">CONTACT</a>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="hanging-bulb">
+        <div class="line"></div>
+        <div class="bulb-top"></div>
+        <div class="bulb-shape"></div>
+      </div>
+      <div class="light-sing">
+        <span class="lett letter-l">L</span>
+        <span class="lett letter-i">I</span>
+        <span class="lett letter-g">G</span>
+        <span class="lett letter-h">H</span>
+        <span class="lett letter-t">T</span>
+        <span class="lett letter-s">S</span>
+      </div>
+      <a class="learn-more" href="#products">LEARN MORE</a>
+    </section>
+    <div class="photo-section">
+      <img class="photo-light" src="./assets/new-light.jpg" />
+    </div>
+    <section id="about" class="about">
+      <div class="about-textbox">
+        <h2 class="about-title">ABOUT</h2>
+        <p class="about-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam amet
+          voluptate, sed dolores possimus laborum inventore fugiat aspernatur,
+          voluptates corrupti aperiam iste, tenetur atque nesciunt ipsum. Odio
+          tempore dolorum enim, voluptatum aut, reprehenderit aliquam cum
+          laudantium sequi officiis consectetur eos.
+        </p>
+      </div>
+      <div class="photo-box"></div>
+    </section>
+    <section id="products" class="products">
+      <h2 class="products-title">PRODUCTS</h2>
+      <div class="products-container">
+        <div class="neons">NEONS</div>
+        <div class="flashlights">
+          <p class="flash-name">FLASHLIGHT</p>
+          <div class="flash-head"></div>
+          <div class="flash-light"></div>
+        </div>
+        <div class="traffic">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2 class="contact-title">CONTACT</h2>
+      <div class="address">
+        <p>All of the Lights Company</p>
+        <p>Address: 1234 Illumination Street, Lightville, USA</p>
+        <p>+1 555-123-4567</p>
+        <p>info@allofthelightsco.com</p>
+      </div>
+      <form class="contact-form">
+        <input class="form-field form-input" type="text" placeholder="Name" />
+        <input class="form-field form-input" type="email" placeholder="Email" />
+        <textarea class="form-field" cols="30" rows="8">
+Type your message here</textarea
+        >
+        <a class="submit-form" href="#">SUBMIT</a>
+      </form>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>

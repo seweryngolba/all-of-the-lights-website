@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,4 +12,416 @@
 
 body {
   font-family: "Lato", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-left: 10px;
+}
+
+.logo-bulb {
+  font-size: 32px;
+}
+
+.logo-name {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.ham-menu {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.ham-menu-close {
+  font-size: 28px;
+  margin-right: 10px;
+  display: none;
+}
+
+.desktop-menu {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  display: none;
+  align-items: end;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hanging-bulb {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform-origin: top center;
+  animation: lightning 3s ease-in;
+}
+
+.line {
+  height: 140px;
+  width: 2px;
+  background: white;
+}
+
+.bulb-top {
+  width: 36px;
+  height: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: white;
+  z-index: 2;
+}
+
+.bulb-shape {
+  margin-top: -12px;
+  width: 30px;
+  height: 34px;
+  background: #f1c40f;
+  box-shadow: 0 0 30px 5px #f1c40f;
+  border-radius: 40%;
+  animation: glowing 3s ease;
+}
+
+.lett {
+  font-size: 46px;
+  font-weight: bold;
+  padding: 10px;
+  /* opacity: 0; */
+}
+
+.learn-more {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.letter-l,
+.letter-i {
+  animation: appearing 3s linear;
+}
+
+.letter-g,
+.letter-h {
+  animation: appearing2 3s linear;
+}
+
+.letter-t,
+.letter-s {
+  animation: appearing3 3s linear;
+}
+
+.photo-section {
+  width: 100%;
+}
+
+.photo-light {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-textbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-title {
+  font-size: 32px;
+  padding-top: 16px;
+}
+
+.about-text {
+  padding: 16px;
+  text-align: justify;
+}
+
+.photo-box {
+  width: 280px;
+  height: 180px;
+  border: 2px solid white;
+  background-image: url(./assets/about.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.products-title {
+  font-size: 32px;
+  padding: 24px 0;
+}
+
+.neons {
+  font-size: 34px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  transform: rotate(4deg);
+}
+
+.flashlights {
+  display: flex;
+  align-items: center;
+}
+
+.flash-name {
+  font-size: 34px;
+}
+
+.flash-head {
+  width: 20px;
+  height: 40px;
+  margin-left: 4px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.flash-light {
+  width: 50px;
+  height: 30px;
+  background-color: yellow;
+  filter: blur(2px);
+  box-shadow: 4px 0 10px 5px yellow;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.traffic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 220px;
+  border: 2px solid white;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.red,
+.yellow,
+.green {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.red {
+  border: 2px solid red;
+}
+
+.yellow {
+  border: 2px solid yellow;
+}
+
+.green {
+  border: 2px solid green;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.contact-title {
+  font-size: 32px;
+  padding: 24px 0;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px 30px 10px;
+}
+
+.address p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-field {
+  font-size: 16px;
+  border: 2px solid white;
+  padding: 5px;
+  color: white;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.form-input {
+  width: 290px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.submit-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: white;
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+@keyframes lightning {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    opacity: 0.4;
+    box-shadow: 0 0 30px 5px #f1c40f;
+  }
+  25% {
+    opacity: 0.6;
+    box-shadow: 0 0 30px 5px #f1c40f;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.6;
+    box-shadow: 0 0 30px 5px #f1c40f;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 30px 5px #f1c40f;
+  }
+}
+
+@keyframes appearing {
+  0% {
+    opacity: 0.8;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes appearing2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes appearing3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
