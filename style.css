@@ -29,6 +29,8 @@ body {
   align-items: center;
   width: auto;
   margin-left: 10px;
+  text-decoration: none;
+  color: white;
 }
 
 .logo-bulb {
@@ -44,6 +46,7 @@ body {
 .ham-menu {
   font-size: 28px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .ham-menu-close {
@@ -60,12 +63,12 @@ body {
   align-items: end;
   flex-direction: column;
   width: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  background: #f1c40f;
 }
 
 .menu-item {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 18px;
   padding: 10px;
   font-weight: bold;
@@ -115,7 +118,6 @@ body {
   font-size: 46px;
   font-weight: bold;
   padding: 10px;
-  /* opacity: 0; */
 }
 
 .learn-more {
@@ -171,7 +173,7 @@ body {
 }
 
 .about-title {
-  font-size: 32px;
+  font-size: 44px;
   padding-top: 16px;
 }
 
@@ -204,8 +206,14 @@ body {
 }
 
 .products-title {
-  font-size: 32px;
+  font-size: 44px;
   padding: 24px 0;
+}
+
+.products-subtitle {
+  margin-top: -15px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .neons {
@@ -214,11 +222,20 @@ body {
   border: 2px solid white;
   border-radius: 10px;
   transform: rotate(4deg);
+  cursor: pointer;
+}
+
+.neon-light {
+  text-shadow: 0 0 7px purple, 0 0 10px purple, 0 0 21px #fff, 0 0 42px purple,
+    0 0 82px purple, 0 0 92px purple, 0 0 102px purple, 0 0 151px purple;
+  border: 5px solid purple;
+  box-shadow: 0 0 50px 10px purple;
 }
 
 .flashlights {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .flash-name {
@@ -234,6 +251,7 @@ body {
   border-bottom-left-radius: 10px;
 }
 .flash-light {
+  display: none;
   width: 50px;
   height: 30px;
   background-color: yellow;
@@ -253,6 +271,7 @@ body {
   border: 2px solid white;
   border-radius: 10px;
   gap: 10px;
+  cursor: pointer;
 }
 
 .red,
@@ -264,15 +283,78 @@ body {
 }
 
 .red {
+  background: rgba(255, 0, 0, 0.2);
   border: 2px solid red;
 }
 
+.red-animation {
+  animation: redlight 8s linear infinite;
+}
+
 .yellow {
+  background: rgba(255, 255, 0, 0.2);
   border: 2px solid yellow;
 }
 
+.yellow-animation {
+  animation: yellowlight 8s linear infinite;
+}
+
 .green {
+  background: rgba(0, 128, 0, 0.3);
   border: 2px solid green;
+}
+
+.green-animation {
+  animation: greenlight 8s linear infinite;
+}
+
+@keyframes redlight {
+  0% {
+    background: rgba(255, 0, 0, 0.2);
+  }
+  2%,
+  40% {
+    background: red;
+  }
+  42%,
+  100% {
+    background: rgba(255, 0, 0, 0.2);
+  }
+}
+
+@keyframes yellowlight {
+  0%,
+  20% {
+    background: rgba(255, 255, 0, 0.2);
+  }
+  22%,
+  40% {
+    background: yellow;
+  }
+  42%,
+  80% {
+    background: rgba(255, 255, 0, 0.2);
+  }
+  82%,
+  100% {
+    background: yellow;
+  }
+}
+
+@keyframes greenlight {
+  0%,
+  40% {
+    background: rgba(0, 128, 0, 0.3);
+  }
+  42%,
+  80% {
+    background: green;
+  }
+  82%,
+  100% {
+    background: rgba(0, 128, 0, 0.3);
+  }
 }
 
 .contact {
@@ -283,7 +365,7 @@ body {
 }
 
 .contact-title {
-  font-size: 32px;
+  font-size: 44px;
   padding: 24px 0;
 }
 
@@ -307,16 +389,20 @@ body {
 }
 
 .form-field {
+  width: 290px;
   font-size: 16px;
   border: 2px solid white;
   padding: 5px;
   color: white;
+  font-family: "Lato", sans-serif;
   background: transparent;
+  text-decoration: none;
   border-radius: 5px;
 }
 
-.form-input {
-  width: 290px;
+.form-field:focus {
+  outline: none;
+  border-color: #f1c40f;
 }
 
 ::placeholder {
@@ -328,11 +414,126 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background: white;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
   font-weight: bold;
+  font-size: 18px;
   width: 120px;
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
+}
+
+.mystery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.mystery-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 260px;
+  height: 200px;
+  border: 2px solid yellow;
+  border-radius: 15px;
+  transform: rotate(2deg);
+}
+
+.mystery-title {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.mystery-button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid red;
+  color: red;
+  background: transparent;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 2px solid white;
+}
+
+.logo-foot {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-bulb-footer {
+  font-size: 36px;
+}
+
+.logo-name-bottom {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 4px;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.foot-icon {
+  font-size: 36px;
+  color: white;
+  padding-right: 8px;
+}
+
+.new-div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  animation: showing 7s linear;
+}
+
+.new-title {
+  font-size: 54px;
+  text-align: center;
+}
+
+.new-button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+}
+
+@keyframes showing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes lightning {

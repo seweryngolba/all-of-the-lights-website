@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
+    <header id="header" class="header">
+      <a class="logo" href="#">
         <i class="fa-solid fa-lightbulb logo-bulb"></i>
         <span class="logo-name"
           >ALL OF <br />
           THE LIGHTS</span
         >
-      </div>
+      </a>
       <div id="hamburger-menu" class="menu">
         <i id="ham-logo" class="fa-solid fa-bars ham-menu"></i>
         <i id="close" class="fa-regular fa-circle-xmark ham-menu-close"></i>
@@ -46,7 +46,7 @@
       </div>
       <a class="learn-more" href="#products">LEARN MORE</a>
     </section>
-    <div class="photo-section">
+    <div id="photo-section" class="photo-section">
       <img class="photo-light" src="./assets/new-light.jpg" />
     </div>
     <section id="about" class="about">
@@ -64,17 +64,18 @@
     </section>
     <section id="products" class="products">
       <h2 class="products-title">PRODUCTS</h2>
+      <h3 class="products-subtitle">Check how they work by clicking on them</h3>
       <div class="products-container">
-        <div class="neons">NEONS</div>
-        <div class="flashlights">
+        <div id="neon" class="neons">NEONS</div>
+        <div id="flashlights" class="flashlights">
           <p class="flash-name">FLASHLIGHT</p>
           <div class="flash-head"></div>
-          <div class="flash-light"></div>
+          <div id="flash-light" class="flash-light"></div>
         </div>
-        <div class="traffic">
-          <div class="red"></div>
-          <div class="yellow"></div>
-          <div class="green"></div>
+        <div id="traffic" class="traffic">
+          <div id="red" class="red"></div>
+          <div id="yellow" class="yellow"></div>
+          <div id="green" class="green"></div>
         </div>
       </div>
     </section>
@@ -89,12 +90,42 @@
       <form class="contact-form">
         <input class="form-field form-input" type="text" placeholder="Name" />
         <input class="form-field form-input" type="email" placeholder="Email" />
-        <textarea class="form-field" cols="30" rows="8">
-Type your message here</textarea
-        >
-        <a class="submit-form" href="#">SUBMIT</a>
+        <textarea class="form-field" cols="30" rows="8">Message...</textarea>
+        <a class="submit-form" href="javascript:;">SUBMIT</a>
       </form>
     </section>
+    <section class="mystery">
+      <div class="mystery-textbox">
+        <h3 class="mystery-title">
+          Want to know what would happen if we weren't here?
+        </h3>
+        <button id="mystery-button" class="mystery-button">CHECK NOW</button>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <a href="#" class="logo-foot">
+        <i class="fa-solid fa-lightbulb logo-bulb-footer"></i>
+        <span class="logo-name-bottom"
+          >ALL OF <br />
+          THE LIGHTS</span
+        >
+      </a>
+      <p class="footer-text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam,
+        dolorum.
+      </p>
+      <div class="icons">
+        <a href="javascript:;" class="foot-icon"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="javascript:;" class="foot-icon"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="javascript:;" class="foot-icon"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
