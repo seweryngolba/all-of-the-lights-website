@@ -1,13 +1,12 @@
 # All of the Lights
 
-![All of the Lights](./assets/bulb.ico)
-
 "All of the Lights" is a website that showcases different types of lights, including neons, flashlights, and traffic lights. It features a visually appealing design with interactive elements that allow users to experience the different types of lights in a fun and engaging way.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Demo](#demo)
 - [Usage](#usage)
 - [Installation](#installation)
 
@@ -28,6 +27,10 @@ The project utilizes the following technologies:
 - JavaScript
 - FontAwesome (for icons)
 - Google Fonts (Lato font family)
+
+## Demo
+
+Check out the live demo of the "All of the Lights" website [here](https://lights-website-s-golba.netlify.app/).
 
 ## Usage
 
